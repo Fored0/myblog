@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { useState } from "react";
 import  Login from './login'
 import {
   Routes,
@@ -8,10 +8,11 @@ import {
 } from 'react-router-dom'
 
 function App() {
-  // const location = useLocation()
-  // const {path} = location
-  // console.log(useLocation());
-
+  const location = useLocation()
+  const {pathname} = location
+  console.log('pathname',pathname);
+  console.log('location',location);
+  
   return (
     <Routes>
       <Route element={<Login/>}></Route>
