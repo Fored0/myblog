@@ -27,7 +27,7 @@ function App() {
       <Header className="header" style={headerStyle}><Head/></Header>
       <Layout style={mainStyle}>
         <Sider><Menus/></Sider>
-        <Content><Router /></Content>
+        <Content style={{width:window.screen.width-200}} ><Router /></Content>
       </Layout>
     </Layout>
     </>
