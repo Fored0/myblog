@@ -1,17 +1,33 @@
 import React from 'react';
-import { useRoutes } from "react-router-dom";
+import { useRoutes, Navigate } from "react-router-dom";
+
 import Login from '../pages/login';
 import Home from '../pages/home';
+import BlogList from '../pages/blogList';
+import Release from '../pages/release';
+
 function Router() {
   const element = useRoutes([
     {
-      path:"login",
-      element:<Login/>,
+      path: "/home",
+      element: <Home />
     },
     {
-      path:"",
-      element:<Home/>
+      path: '/',
+      element: <Navigate to='/home' />,
     },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path:'/blogList',
+      element:<BlogList/>
+    },
+    {
+      path:'/release',
+      element:<Release/>
+    }
   ])
   return element
 }

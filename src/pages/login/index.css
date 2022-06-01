@@ -1,0 +1,15 @@
+.login_background-img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+.login_form{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
