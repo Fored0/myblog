@@ -16,18 +16,19 @@ const data = [
   },
 ];
 function BlogList() {
+
   return (
     <>
       <List
         itemLayout="horizontal"
         dataSource={data}
-        className='blogList'
         renderItem={(item) => (
           <>
             <List.Item style={{ width: window.screen.width - 200 }}>
               <List.Item.Meta
+                className='blogList'
                 avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
-                title={<a href="https://ant.design">{item.title}</a>}
+                title={<p>{item.title}</p>}
                 description="Ant Design, a design language for background applications, is refined by Ant UED Team"
               />
             </List.Item>

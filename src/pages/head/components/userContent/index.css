@@ -1,0 +1,48 @@
+.userContent-container{
+  width: 200px;
+  cursor: pointer;
+  font-size: 14px;
+  color: grey;
+}
+.userContent_head{
+  text-align: center;
+}
+.userContent_head-userName{
+  color: #000000d2;
+  font-size: 18px;
+}
+.userContent_head-extra{
+  display: flex;
+  margin-top: 10px;
+}
+.userContent_head-extra-item{
+  flex: 1;
+}
+.userContent_content{
+  border-bottom: 1px solid rgb(232, 225, 216);
+}
+.userContent_content-item{
+  display: inline-flex;
+  width: 100%;
+  height: 30px;
+  position: relative;
+}
+.userContent-icon{
+  position: absolute;
+  left: 15px;
+}
+.userContent-description{
+  position: absolute;
+  left: 45px;
+  width: 100px;
+  text-align: left;
+}
+.userContent-arrow{
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  font-size: 22px;
+}
+.userContent_footer{
+  margin-top: 10px;
+}
