@@ -18,7 +18,7 @@ function Head() {
         visible={visible}
         onVisibleChange={handleVisibleChange}
       >
-        <Avatar className="head-img" src="https://joeschmoe.io/api/v1/random" />
+        <Avatar className="head-img" src="https://img0.baidu.com/it/u=1694074520,2517635995&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" />
       </Popover>
     </div>
   );
